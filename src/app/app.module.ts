@@ -6,10 +6,14 @@ import { AmplifyUIAngularModule } from '@aws-amplify/ui-angular';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { BlueComponent } from './blue/blue.component';
+import { GreenComponent } from './green/green.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    BlueComponent,
+    GreenComponent
   ],
   imports: [
     BrowserModule,
