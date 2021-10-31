@@ -7,14 +7,14 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { BlueComponent } from './blue/blue.component';
 import { GreenComponent } from './green/green.component';
+import { PokemonComponent } from './pokemon/pokemon.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BlueComponent,
-    GreenComponent
+    GreenComponent,
+    PokemonComponent
   ],
   imports: [
     BrowserModule,

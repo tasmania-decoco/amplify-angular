@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { BlueComponent } from './blue/blue.component';
 import { GreenComponent } from './green/green.component';
+import { PokemonComponent } from './pokemon/pokemon.component';
 
 const routes: Routes = [
   {
-    path: 'blue',
-    component: BlueComponent,
+    path: 'pokemon',
+    component: PokemonComponent,
   },
   {
     path: 'green',
