@@ -1,0 +1,17 @@
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - yarn
+    build:
+      commands:
+        - yarn build
+        - yarn test
+  artifacts:
+    baseDirectory: dist/amplify-angular
+    files:
+      - '**/*'
+  cache:
+    paths:
+      - node_modules/**/*
