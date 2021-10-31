@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { GreenComponent } from './green/green.component';
+import { DogComponent } from './dog/dog.component';
 import { PokemonComponent } from './pokemon/pokemon.component';
 
 const routes: Routes = [
@@ -9,8 +9,8 @@ const routes: Routes = [
     component: PokemonComponent,
   },
   {
-    path: 'green',
-    component: GreenComponent,
+    path: 'dog',
+    component: DogComponent,
   },
 ];
 

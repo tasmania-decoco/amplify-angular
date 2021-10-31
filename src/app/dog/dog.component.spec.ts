@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { GreenComponent } from './green.component';
+import { DogComponent } from './dog.component';
 
-describe('GreenComponent', () => {
-  let component: GreenComponent;
-  let fixture: ComponentFixture<GreenComponent>;
+describe('DogComponent', () => {
+  let component: DogComponent;
+  let fixture: ComponentFixture<DogComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ GreenComponent ]
+      declarations: [ DogComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(GreenComponent);
+    fixture = TestBed.createComponent(DogComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
