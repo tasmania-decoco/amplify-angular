@@ -7,7 +7,7 @@ frontend:
     build:
       commands:
         - yarn build
-        - yarn test
+#        - yarn test
   artifacts:
     baseDirectory: dist/amplify-angular
     files:
