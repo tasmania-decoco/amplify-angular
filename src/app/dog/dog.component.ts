@@ -12,8 +12,8 @@ export class DogComponent implements OnInit {
 
   ngOnInit(): void {
     this.repository.getDogImage().subscribe((result) => {
-      console.info(result);
-      this.imageUrl = JSON.parse(result).message;
+      console.info('result', result);
+      this.imageUrl = result.message;
     });
   }
 }

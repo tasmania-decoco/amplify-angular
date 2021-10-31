@@ -1,3 +1,4 @@
+import { HttpHeaders } from "@angular/common/http";
 import { Injectable } from "@angular/core";
 import { Observable } from "rxjs";
 import { HttpClientService } from "../http-client.service";
@@ -10,6 +11,10 @@ export class DogRepository {
   constructor(private http: HttpClientService) { }
 
   getDogImage(): Observable<any> {
-    return this.http.get(host, 'api/breeds/image/random')
+    return this.http.get(host, 'api/breeds/image/random', {
+      headers: new HttpHeaders({
+        'Content-Type': 'text/plain'
+      }),
+    })
   }
 }
